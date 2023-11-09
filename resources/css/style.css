@@ -25,6 +25,10 @@
     }
 }
 /* GENERAL BODY STYLE FOR WEBSITE   */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #e7e7e7;
     /* background-color: #aabbb5; */
@@ -92,7 +96,10 @@ a {
     transition: background-color 0.3s, border 0.3s; /* Smooth transitions for background color and border */
 }
 
-
+.pic img{
+    display: block;
+    margin: auto;
+}
 
 footer{
     margin-top: 40px;
@@ -103,11 +110,11 @@ footer{
     background-color: #7a8ea7;
     color: #fff;
     text-align: center;
-    padding: 200px 0;
+    padding: 170px 0;
     margin-top: 60px;
     width: 100%;
     height: 100px;
-    margin-bottom: 240px;
+    margin-bottom: 100px;
 }
 
 /* Heading Styles */
@@ -129,9 +136,9 @@ footer{
   /* About Me Section Styles */
   .about-me {
     text-align: center;
-    padding: 80px 0 20px;
+    padding: 60px 0 20px;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 0px;
     /* background-image: url("../images/code\ project.png"); */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
@@ -205,9 +212,11 @@ footer{
     /* transform: translateX(0); */
 }
 
+/* skills section */
 .skills {
     text-align: center;
     margin-left: 20px;
+    margin-bottom: 180px;
 }
 
 .skills ul {
@@ -227,3 +236,4 @@ footer{
 /* #nodejs.small-logo {
     width: 180px;
 } */
+

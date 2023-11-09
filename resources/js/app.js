@@ -37,8 +37,8 @@ let expCount = 1; // years of experience
 let projectCount = 2; // projects
 
 window.addEventListener('load', function() {
-    animateCount(expElement, 0,  expCount, 800); // 1000ms (1 seconds) animation duration
-    animateCount(projectElement, 0, projectCount, 800);
+    animateCount(expElement, 0,  expCount, 1800); // 1000ms (1 seconds) animation duration
+    animateCount(projectElement, 0, projectCount, 1800);
 });
 
 // Update button event listener
