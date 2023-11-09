@@ -11,3 +11,20 @@ const observer = new IntersectionObserver ((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+// 
+const changeProjectNum = () => {
+    projectNum = document.getElementById("project-num");
+    projectNum.innerHTML = "250";
+}
+
+const changeExpNum = () => {
+    expNum = document.getElementById("exp-num");
+    expNum.innerHTML = "12";
+}
+
+changeBtn = document.getElementById("change-btn");
+changeBtn.addEventListener('click',() => {
+    changeProjectNum();
+    changeExpNum();
+})
