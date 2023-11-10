@@ -51,3 +51,21 @@ document.getElementById('change-btn').addEventListener('click', function() {
     animateCount(expElement, expCount, newExpTarget, 500); // 500ms animation duration
     animateCount(projectElement, projectCount, newProjectTarget, 500);
 });
+
+
+const projectImages = document.querySelectorAll('.project-image');
+
+projectImages.forEach(image => {
+    const img = image.querySelector('img');
+    const learnMoreButton = image.querySelector('.learn-more-button');
+
+    image.addEventListener('mouseover', () => {
+        img.style.filter = 'brightness(70%)'; // Apply dim effect
+        learnMoreButton.style.display = 'block'; // Show the button
+    });
+
+    image.addEventListener('mouseout', () => {
+        img.style.filter = 'brightness(100%)'; // Remove dim effect
+        learnMoreButton.style.display = 'none'; // Hide the button
+    });
+});
