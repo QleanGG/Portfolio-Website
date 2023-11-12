@@ -27,6 +27,8 @@
 /* GENERAL BODY STYLE FOR WEBSITE   */
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
 }
 
 body {
@@ -52,7 +54,8 @@ nav {
     display: flex;
     font-family: 'Edu TAS Beginner', cursive;
     color: #7a8ea7;
-    margin: 8px;
+    margin: 0px;
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -61,6 +64,7 @@ nav ul {
     justify-content:flex-end;
     align-items: center;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 nav h2{
@@ -71,6 +75,8 @@ nav h2{
     color: #7a8ea7;
     text-align: left;
     margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 30px;
 }
 
 nav li {
@@ -101,16 +107,44 @@ a {
     margin: auto;
 }
 
-
-.opening {
-    background-color: #7a8ea7;
+.header {
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     text-align: center;
-    padding: 170px 0;
-    margin-top: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.parallax-content {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100px;
-    margin-bottom: 100px;
+    height: 100%;
+    background-image: url(../images/computer-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+.opening {
+    color: #fff; /* Adjust text color for better visibility */
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Add flex container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    z-index: 9; /* Adjust z-index to ensure it's above the parallax background */
 }
 
 /* Heading Styles */
@@ -118,7 +152,6 @@ a {
     color: #fff;
     font-size: 46px;
     margin: 0 0 15px 0;
-    
 }
 
 /* Subheading Styles */
@@ -128,20 +161,55 @@ a {
     font-weight: bold;
     margin-bottom: 10px;
 }
+@media only screen and (max-width: 480px) {
+    .about-me {
+        display: block;
+        width: 100px;
+    }
+}
 
   /* About Me Section Styles */
-  .about-me {
+
+  .about-me-section {
+    position: relative;
+    z-index: 2; /* Increase z-index to place it above the header */;
+}
+
+.about-me {
     text-align: center;
-    padding: 60px 0 20px;
-    margin-bottom: 20px;
-    margin-top: 0px;
-    /* background-image: url("../images/code\ project.png"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
+    padding: 500px 0;
+    margin-bottom: 120px;
+    background-image: url(../images/about-me.jpg); 
+    background-size: cover;
+    position: relative;
+    z-index: 2; 
+    margin: 0; 
+    padding: 300; 
+}
+
+.about-me:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/about-me.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.about-me h2, .about-me p, .about-me a {
+    color: #fff; /* Text color for the new section */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
 }
 
 .about-me h2 {
     font-size: 1.8rem;
+    margin-top: 0;
     
 }
 
