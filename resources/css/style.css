@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Montserrat:ital,wght@0,200;0,400;0,700;1,400;1,700&family=Nunito:wght@300;400;700&family=Patrick+Hand&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Dosis:wght@400;700&family=Edu+TAS+Beginner&family=Indie+Flower&family=Montserrat:ital,wght@0,200;0,400;0,700;1,400;1,700&display=swap');
 
 /* KEYFRAMES */
 @keyframes fade-up {
@@ -48,6 +48,10 @@ h1, h2, h3, h4, h5 {
     color: #F28B0C;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
 p {
     color: white;
 }
@@ -72,7 +76,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content:flex-end;
-    font-family: 'Edu TAS Beginner', cursive;
+    /* font-family: 'Dosis', sans-serif; */
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Anonymous Pro', monospace;
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Edu TAS Beginner', cursive; */
     color: #2F0840;
     padding-top: 5px;
     padding-bottom: 10px;
@@ -106,7 +114,7 @@ nav h2{
 
 nav li {
     margin: 0 20px 0 30px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 nav a {
@@ -128,9 +136,9 @@ nav a.active {
 .border-btn {
     color: #2F0840;
     text-decoration: none;
-    padding: 3px 13px;
+    padding: 5px 15px;
     border: 2px solid #F26938;
-    border-radius: 70px;
+    border-radius: 10px;
     transition: color 0.3s background-color 0.3s, border 0.3s; /* Smooth transitions for background color and border */
 }
 
@@ -278,6 +286,7 @@ nav a.active {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
+    /* font-weight: bold; */
 }
 
 .spc-num {
@@ -285,6 +294,8 @@ nav a.active {
     font-size: 3.5rem;
     margin-top: 30px;
     margin-bottom: 10px;
+    font-weight: 400px;
+    font-weight: 400;
 }
 
 .btn-container {
@@ -341,8 +352,8 @@ nav a.active {
 }
 
 .small-logo {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -360,7 +371,6 @@ nav a.active {
 }
 
 .subject {
-    font-size: 28px;
     text-align: center;
     margin-bottom: 50px;
 }
