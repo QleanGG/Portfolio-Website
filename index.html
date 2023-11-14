@@ -13,19 +13,19 @@
 <body>
 
     <nav>
-        <h2><a href="#header">Guy Guzman</a></h2>
+        <h2><a class="logo" href="#header"><h2></h2>Guy Guzman</a></h2>
         <ul class="nav">
             <!-- <li><a>Projects</a></li> -->
             <li><a href="#about-me-section">About Me</a></li>
-            <li class="border-btn"><a href="#">Contact Me</a></li>
+            <li><a class="border-btn" href="#">Contact Me</a></li>
         </ul>
     </nav>
 
     <header id="header" class="header parallax-header">
         <div class="parallax-content">
             <div class="opening hidden" >
-                <p >Welcome To</p>
-                <h1>Guy's Programming Portfolio</h1>
+                <h1>Hi, I'm Guy Guzman</h1>
+                <p >Welcome To My Website</p>
             </div>
         </div>
     </header>
@@ -33,33 +33,35 @@
     <main>
 
         <section id="about-me-section">
-            <div class="hidden about-me">
-                <!-- <img src="./resources/images/guy-linkedin.jpg" alt="Picture of Guy Guzman" width="400px" height="700px"> -->
-                <h2>About me</h2>
-                <p>I'm a passionate programmer with a focus on web development. My goal is to create user-friendly and
-                    efficient web applications that make people's lives easier.<br> I love learning new technologies and
-                    always strive for excellence in my work.</p>
-                <!-- <img src="./resources/images/codecode.jpg" alt="blue code lines"> -->
-                <!-- <img src="./resources/images/code project.png" alt="code lines" > -->
+            <div class="parallax-content2">
+                <div class="about-me">
+                    <!-- <img src="./resources/images/guy-linkedin.jpg" alt="Picture of Guy Guzman" width="400px" height="700px"> -->
+                    <h2 class="hidden">About me</h2>
+                    <p class="hidden">I'm a passionate programmer with a focus on web development. My goal is to create user-friendly and
+                        efficient web applications that make people's lives easier.<br> I love learning new technologies and
+                        always strive for excellence in my work.</p>
+                    <!-- <img src="./resources/images/codecode.jpg" alt="blue code lines"> -->
+                    <!-- <img src="./resources/images/code project.png" alt="code lines" > -->
+                </div>
+                <div class="changing-information">
+                    <div>
+                        <p class="spc-num" id="project-num" data-val="2">2</p>
+                        <p>projects showcased</p>
+                    </div>
+    
+                    <div>
+                        <p class="spc-num" id="exp-num">1</p>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button id="change-btn" class="custom-button">Are you hiring?</button>
+                </div>
             </div>
-
         </section>
 
         <section class="hidden" id="experience">
-            <div class="changing-information">
-                <div>
-                    <p class="spc-num" id="project-num" data-val="2">2</p>
-                    <p>projects showcased</p>
-                </div>
-
-                <div>
-                    <p class="spc-num" id="exp-num">1</p>
-                    <p>Years of Experience</p>
-                </div>
-            </div>
-            <div class="btn-container">
-                <button id="change-btn" class="custom-button">Are you hiring?</button>
-            </div>
+            
             <div class="skills">
                 <h3>My Web Development Skills</h3>
                 <ul>

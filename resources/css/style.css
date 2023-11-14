@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Nunito:wght@300;400;700&family=Patrick+Hand&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Montserrat:ital,wght@0,200;0,400;0,700;1,400;1,700&family=Nunito:wght@300;400;700&family=Patrick+Hand&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* KEYFRAMES */
 @keyframes fade-up {
@@ -32,30 +32,55 @@ html {
 }
 
 body {
+    /* background-color: #D96E30; */
     background-color: #e7e7e7;
     /* background-color: #aabbb5; */
     /* background-color: #7a8ea7; */
     /* background-color: rgb(188, 231, 216); */
-    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     /* font-family: 'Playfair Display', serif; */
-    margin: 2px 0;
+    margin: 0;
     box-sizing: content-box;
 }
 
 h1, h2, h3, h4, h5, a {
-    color: #7a8ea7;
+    color: #F28B0C;
 }
+
+p {
+    color: white;
+}
+
+a {
+    color: #2F0840; /* Base color for links */
+    text-decoration: none; /* Remove underlines by default */
+    transition: color 0.4s; /* Smooth transition for color change */
+  }
+  
+  a:hover {
+    color: #F26938; /* Hover color for links */
+  }
 
 li {
     list-style-type: none;
 }
 
 nav {
+    height: 45px;
     display: flex;
+    align-items: center;
+    justify-content:flex-end;
     font-family: 'Edu TAS Beginner', cursive;
-    color: #7a8ea7;
-    margin: 0px;
-    margin-bottom: 10px;
+    color: #2F0840;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    /* margin: 0px; */
+    /* margin-bottom: 15px; */
+    position: fixed;
+    background-color: #e7e7e7;
+    width: 100%;
+    z-index: 99;
 }
 
 nav ul {
@@ -69,10 +94,9 @@ nav ul {
 
 nav h2{
     width: 300px;
-    font-size: 2.5rem;
+    font-size: 35px;
     letter-spacing: 5px;
     font-family: 'Edu TAS Beginner', cursive;
-    color: #7a8ea7;
     text-align: left;
     margin-top: 0;
     margin-bottom: 0;
@@ -80,27 +104,27 @@ nav h2{
 }
 
 nav li {
-    margin: 0 10px;
-    font-size: 1.4rem;
+    margin: 0 40px 0 10px;
+    font-size: 26px;
 }
 
-a {
-    color: #7a8ea7; /* Base color for links */
-    text-decoration: none; /* Remove underlines by default */
-    transition: color 0.3s; /* Smooth transition for color change */
-  }
-  
-  a:hover {
-    color: #7ab5bb; /* Hover color for links */
-  }
+.logo {
+    color: #F28B0C;
+}
 
 .border-btn {
+    color: #2F0840;
     text-decoration: none;
     padding: 3px 13px;
-    border: 2px solid #aabbb5;
+    border: 2px solid #F26938;
     border-radius: 70px;
-    transition: background-color 0.3s, border 0.3s; /* Smooth transitions for background color and border */
+    transition: color 0.3s background-color 0.3s, border 0.3s; /* Smooth transitions for background color and border */
 }
+
+.border-btn:hover {
+    color: #F26938;
+}
+
 
 .pic img{
     display: block;
@@ -125,7 +149,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/computer-background.jpg);
+    background-image: url(../images/japan-golden.png); 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -135,7 +159,8 @@ a {
 }
 
 .opening {
-    color: #fff; /* Adjust text color for better visibility */
+    
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 7);
     text-align: center;
     margin-top: 0;
     width: 100%;
@@ -149,8 +174,9 @@ a {
 
 /* Heading Styles */
 .opening h1 {
-    color: #fff;
-    font-size: 46px;
+    color: #F28B0C;
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 7);
+    font-size: 68px;
     margin: 0 0 15px 0;
 }
 
@@ -175,11 +201,11 @@ a {
     z-index: 2; /* Increase z-index to place it above the header */;
 }
 
-.about-me {
+.parallax-content2 {
     text-align: center;
     padding: 500px 0;
     margin-bottom: 120px;
-    background-image: url(../images/about-me.jpg); 
+    background-image: url(../images/computer-about.png); 
     background-size: cover;
     position: relative;
     z-index: 2; 
@@ -187,21 +213,21 @@ a {
     padding: 300; 
 }
 
-.about-me:before {
+.parallax-content2:before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/about-me.jpg); 
+    background-image: url(../images/computer-about.png); 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
 }
 
-.about-me h2, .about-me p, .about-me a {
+.about-me p, .about-me a {
     color: #fff; /* Text color for the new section */
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
@@ -235,7 +261,7 @@ a {
 }
 
 .spc-num {
-    color: #7a8ea7;
+    color: #F28B0C;
     font-size: 3.5rem;
     margin-bottom: 10px;
 }
@@ -246,7 +272,7 @@ a {
 }
 
 .custom-button {
-    background-color: #7a8ea7; /* Primary color */
+    background-color: #F28B0C; /* Primary color */
     color: #fff; /* Text color */
     border: none;
     padding: 15px 30px; /* Increase padding for a larger button */
@@ -259,7 +285,7 @@ a {
 }
 
 .custom-button:hover {
-    background-color: #aabbb5; /* Secondary color */
+    background-color: #F26938; /* Secondary color */
 }
 
 
