@@ -7,21 +7,24 @@
     <title>Portfolio-website</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./resources/images/dpr project.png">
     <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 
 <body>
 
     <nav>
-        <h2><a class="logo" href="#header"><h2></h2>Guy Guzman</a></h2>
+        <h2><a class="logo" href="./"><h2></h2>Guy Guzman</a></h2>
         <ul class="nav">
             <!-- <li><a>Projects</a></li> -->
-            <li><a href="#about-me-section">About Me</a></li>
+            <li><a href="./" class="nav-link" data-target="header">Home</a></li>
+            <li><a data-target="about-me-section" href="#about-me-section" class="nav-link">About Me</a></li>
+            <li><a href="#project-section" class="nav-link" data-target="project-section">Project</a></li>
             <li><a class="border-btn" href="#">Contact Me</a></li>
         </ul>
     </nav>
 
-    <header id="header" class="header parallax-header">
+    <header id="header" class="section header parallax-header">
         <div class="parallax-content">
             <div class="opening hidden" >
                 <h1>Hi, I'm Guy Guzman</h1>
@@ -32,12 +35,12 @@
 
     <main>
 
-        <section id="about-me-section">
+        <section class="section" id="about-me-section">
             <div class="parallax-content2">
                 <div class="about-me">
                     <!-- <img src="./resources/images/guy-linkedin.jpg" alt="Picture of Guy Guzman" width="400px" height="700px"> -->
                     <h2 class="hidden">About me</h2>
-                    <p class="hidden">I'm a passionate programmer with a focus on web development. My goal is to create user-friendly and
+                    <p class="hidden">I'm a passionate programmer with a focus on web development.<br> My goal is to create user-friendly and
                         efficient web applications that make people's lives easier.<br> I love learning new technologies and
                         always strive for excellence in my work.</p>
                     <!-- <img src="./resources/images/codecode.jpg" alt="blue code lines"> -->
@@ -57,24 +60,21 @@
                 <div class="btn-container">
                     <button id="change-btn" class="custom-button">Are you hiring?</button>
                 </div>
-            </div>
-        </section>
-
-        <section class="hidden" id="experience">
             
-            <div class="skills">
-                <h3>My Web Development Skills</h3>
-                <ul>
+                <div class="skills">
+                    <h3>My Web Development Skills</h3>
+                 <ul>
                     <li><img src="./resources/images/html-logo.png" alt="html logo" class="small-logo"></li>
                     <li><img src="./resources/images/css.png" alt="css logo" class="small-logo"></li>
                     <li><img src="./resources/images/js-logo.png" alt="javaScript logo" class="small-logo"></li>
                     <li><img src="./resources/images/python-logo.png" alt="python logo" class="small-logo"></li>
                     <li><img src="./resources/images/nodejs-original.svg" alt="nodejs logo" class="small-logo"id="nodejs"></li>
                 </ul>
-            </div>
+                </div>
+        </div>
         </section>
 
-        <section class="hidden" id="projects">
+        <section class="section hidden" id="project-section">
             <h2 class="subject">My Projects</h2>
             <div class="projects-tab">
                 <div class="project-image">

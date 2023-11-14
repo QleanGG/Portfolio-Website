@@ -69,3 +69,33 @@ projectImages.forEach(image => {
         learnMoreButton.style.display = 'none'; // Hide the button
     });
 });
+
+// nav link color
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.nav-link');
+    let lastActiveLink = null;
+
+    const observerOptions = {
+        rootMargin: '-50px 0px -49px 0px', // Adjust as needed
+        threshold: 0.5, // Adjust as needed
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            const targetId = entry.target.getAttribute('id');
+            const correspondingLink = document.querySelector(`[data-target="${targetId}"]`);
+
+            if (entry.isIntersecting) {
+                correspondingLink.classList.add('active');
+                lastActiveLink = correspondingLink;
+            } else if (correspondingLink === lastActiveLink) {
+                correspondingLink.classList.remove('active');
+            }
+        });
+    }, observerOptions);
+
+    // Observe each section
+    document.querySelectorAll('.section').forEach((section) => {
+        observer.observe(section);
+    });
+});
