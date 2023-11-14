@@ -73,7 +73,6 @@ projectImages.forEach(image => {
 // nav link color
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav-link');
-    let lastActiveLink = null;
 
     const observerOptions = {
         rootMargin: '-50px 0px -49px 0px', // Adjust as needed
@@ -86,10 +85,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const correspondingLink = document.querySelector(`[data-target="${targetId}"]`);
 
             if (entry.isIntersecting) {
+                navLinks.forEach(link => link.classList.remove('active'));
                 correspondingLink.classList.add('active');
-                lastActiveLink = correspondingLink;
-            } else if (correspondingLink === lastActiveLink) {
-                correspondingLink.classList.remove('active');
             }
         });
     }, observerOptions);
