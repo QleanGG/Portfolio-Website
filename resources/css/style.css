@@ -461,6 +461,7 @@ nav a.active {
     display: flex;
     align-items: center;
     justify-content: center; 
+    flex-wrap: wrap;
 }
 
 .projects-tab p{
@@ -475,7 +476,7 @@ nav a.active {
 }
 
 .project {
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .project-image {
