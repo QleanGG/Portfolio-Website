@@ -14,7 +14,7 @@ h4 {
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)), url(../images/contact-theme.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)), url(../images/contact-theme.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
