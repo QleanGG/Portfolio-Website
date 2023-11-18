@@ -188,6 +188,12 @@ nav a.active {
     /* border-bottom:1px solid #F26938; */
 }
 
+/* Example: Hide mobile nav on larger screens */
+@media only screen and (min-width: 769px) {
+    .mobile-nav {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     nav ul {
@@ -358,6 +364,8 @@ nav a.active {
     /* color: #aabbb5; */
     /* color: white; */
 }
+
+
 
 /* .about-me img {
     margin: 0 40px;
