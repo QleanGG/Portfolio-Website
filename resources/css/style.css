@@ -482,9 +482,9 @@ nav a.active {
 .project-image {
     position: relative;
     margin: 50px;
-    max-width: 350px; 
+    max-width: 425px; 
     /* width: auto; */
-    max-height: 200px; 
+    max-height: 225px; 
 }
 
 .project-image img {
