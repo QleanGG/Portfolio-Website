@@ -5,32 +5,80 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Guy Guzman's Portfolio Website Contact Page</title>
-    <meta name="description" content="Hey everyone! This is my portfolio website showing everything about me and my projects. have fun!">
+    <meta name="description"
+        content="Hey everyone! This is my portfolio website showing everything about me and my projects. have fun!">
     <meta property="og:title" content="Guy Guzman's Portfolio Website" />
-    <meta property="og:type" content="website"/>
-    <meta property="og:description" content="Hey everyone! This is my portfolio website showing everything about me and my projects. have fun!" />
-    <meta property="og:image" content="https://qleangg.github.io/Portfolio-Website/resources/images/new-aboutme.jpg"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Hey everyone! This is my portfolio website showing everything about me and my projects. have fun!" />
+    <meta property="og:image" content="https://qleangg.github.io/Portfolio-Website/resources/images/new-aboutme.jpg" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="./resources/images/guyqlean-photoaidcom-cropped.jpg">
     <link rel="stylesheet" href="./resources/css/style.css">
-    
+    <link rel="stylesheet" href="./resources/css/contact.css">
+
 </head>
 
 <body>
 
     <nav>
-        <h2><a class="logo" href="./"><h2></h2>Guy Guzman</a></h2>
+        <h2><a class="logo" href="./">
+                <h2></h2>Guy Guzman
+            </a></h2>
         <ul class="nav">
             <!-- <li><a>Projects</a></li> -->
             <li><a href="./" class="nav-link" data-target="header">Home</a></li>
-            <li><a data-target="about-me-section" href="./index.html#about-me-section" class="nav-link">About Me</a></li>
-            <li><a href="./index.html#project-section" class="nav-link" data-target="project-section">Project</a></li>
+            <li><a data-target="about-me-section" href="./index.html#about-me-section" class="nav-link">About Me</a>
+            </li>
+            <li><a href="./index.html#project-section" class="nav-link" data-target="project-section">Projects</a></li>
             <li><a class="border-btn" href="./contact.html">Contact Me</a></li>
         </ul>
     </nav>
 
+    <header id="header">
+        <h1>Get In Touch!</h1>
+    </header>
 
-
-
+    <main>
+        <section id="Contact">
+            <div class="contact-container">
+                <div class="form">
+                    <form action="/example.html" method="POST">
+                        <h2>Send a Message:</h2>
+                        <input type="text" name="name" placeholder="Your Name *" required>
+                        <br>
+                        <input type="text" name="email" placeholder="Your Email *" required>
+                        <br>
+                        <select name="service" value="What Service Are You Looking For?" required>
+                            <option disabled selected value="">What Service Are You Looking For?</option>
+                            <option>Job opportunity</option>
+                            <option>Collaboration</option>
+                        </select>
+                        <br>
+                        <textarea id="request" name="request" rows="3" cols="30" placeholder="Write your Message..."
+                            required></textarea>
+                        <br>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+                <div class="info">
+                    <p class="my-name">Guy Guzman</p>
+                    <div>
+                        <p class="big-text">guyguz1@gmail.com</p>
+                        <p class="big-text">+972 544 243 343</p>
+                    </div>
+                    <div class="social">
+                        <h4>Follow me on social media!</h4>
+                        <a href="https://www.linkedin.com/in/guy-guzman/" target="_blank"><img src="./resources/images/Icon-linkedin.png" alt="linkedin Icon"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact-footer">
+        <hr> 
+        <p class="contact-sign">Made with love and passion</p>
+    </footer>
+    <script src="./resources/js/app.js" defer></script>
 </body>

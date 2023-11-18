@@ -46,6 +46,7 @@ body {
 
 h1, h2, h3, h4, h5 {
     color: #F28B0C;
+    /* color: #F26938; */
 }
 
 h2 {
@@ -89,6 +90,7 @@ nav {
     position: fixed;
     background-color: #e7e7e7;
     width: 100%;
+    top: 0;
     z-index: 99;
 }
 
@@ -370,9 +372,19 @@ nav a.active {
     justify-content: center; 
 }
 
+.projects-tab p{
+    color: #F28B0C;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
 .subject {
     text-align: center;
     margin-bottom: 50px;
+}
+
+.project {
+    display: inline-block;
 }
 
 .project-image {
@@ -413,7 +425,7 @@ nav a.active {
     display: none;
     transition: opacity 0.5s; /* Add transition for smooth opacity change */
     font-weight: bold;
-}
+} 
 
 .learn-more-button a {
     background-color: #F28B0C;
