@@ -1,6 +1,16 @@
 
 h1 {
-    font-size: 72px;
+    font-size: 4.5rem;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 3.25rem;
+    color:#F26938;
+}
+
+h4 {
+    color:#F26938;
 }
 
 header {
@@ -20,20 +30,15 @@ header {
     color: white;
 }
 
-h2 {
-    margin-top: 0;
-    font-size: 52px;
-    color:#F26938;
-}
-
 .contact-container {
-    width: 100%;
-    margin-top: 20px;
-    padding-left: 70px;
-    background-color: #e7e7e7;
+    width: 90%;
+    margin:20px auto 0;
+    /* padding-left: 70px; */
+    background-color: #fafafa;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
@@ -42,24 +47,27 @@ input {
     height: 30px;
     margin-bottom: 30px;
     border-radius: 9px;
-    width: 500px;
+    width: 475px;
     border: solid black 1px;
+    
 }
 
 select {
     height: 30px;
     margin-bottom: 30px;
     border-radius: 9px;
-    width: 505.8px;
+    width: 481px;
     border: solid black 1px;
+    
 }
 
 textarea {
     height: 50px;
     margin-bottom: 30px;
     border-radius: 9px;
-    width: 500px;
+    width: 475px;
     border: solid black 1px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -70,7 +78,7 @@ input[type=submit] {
     height: 30px;
     margin-bottom: 30px;
     border-radius: 9px;
-    width: 500px;
+    width: 475px;
     border: solid #F28B0C 1px;
 }
 
@@ -91,12 +99,12 @@ input[type=submit]:hover {
 p.my-name{
     margin-top: 0;
     margin-bottom: 30px;
-    font-size: 52px;
+    font-size: 3rem;
     color:#F26938;
 }
 .big-text {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2rem;
     margin-top: 10px;
     margin-bottom: 25px;
 }
@@ -115,3 +123,35 @@ p.my-name{
     padding-bottom: 20px;
 }
 
+/* mobile screen */
+@media only screen and (max-width:480px) {
+    h1 {
+        font-size: 2.9rem;
+    }
+    .contact-container {
+        text-align: center;
+        max-width: 480px;
+    }
+    .contact-container h2 {
+        font-size: 1.6rem;
+    }
+    .contact-container input {
+        width: 300px;
+    }
+    .contact-container select {
+        width: 306px;
+    }
+    .contact-container textarea {
+        width: 300px;
+    }
+    .contact-container input[type=submit] {
+        width: 305px;
+    }
+   .big-text {
+    font-size: 1.4rem;
+   }
+
+   #contact-footer {
+    margin-top: 20px;
+   }
+}
