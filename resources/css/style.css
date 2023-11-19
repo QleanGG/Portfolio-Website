@@ -287,7 +287,7 @@ nav a.active {
 .parallax-content2 {
     text-align: center;
     padding: 200px 0 0px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)), url(../images/computer-about.png); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)), url(../images/computer-about.jpg); 
     background-position: center;
     background-size: cover;
     position: relative;
