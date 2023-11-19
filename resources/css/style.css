@@ -73,7 +73,7 @@ nav ul {
 
 nav h2{
     width: 300px;
-    font-size: 35px;
+    font-size: 2.18rem;
     letter-spacing: 5px;
     font-family: 'Edu TAS Beginner', cursive;
     text-align: left;
@@ -125,6 +125,7 @@ nav a.active {
 .menu-icon {
     display:none;
     cursor: pointer;
+    /* margin-right: 20px; */
     padding-right: 15px;
     font-size: 1.3rem; 
     /* margin-left: 50px; */
@@ -168,7 +169,7 @@ nav a.active {
     }
 
     .menu-icon {
-        display: block;
+        display: flex;
     }
 
     nav h2 {
@@ -179,6 +180,11 @@ nav a.active {
     nav {
         justify-content: space-between;
         align-items: center;
+    }
+}
+@media only screen and (max-width: 369px) { 
+    nav h2 {
+        font-size: 1.5rem;
     }
 }
    
