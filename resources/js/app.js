@@ -34,7 +34,7 @@ function animateCount(element, current, target, duration) {
 const expElement = document.querySelector('#exp-num');
 const projectElement = document.querySelector('#project-num');
 let expCount = 1; // years of experience
-let projectCount = 2; // projects
+let projectCount = 10; // projects
 
 window.addEventListener('load', function () {
     animateCount(expElement, 0, expCount, 1800); 
